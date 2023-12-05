@@ -1,13 +1,80 @@
-body {
+*{
+  box-sizing: border-box;
+}
+body{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+.container{
+  width: 600px;
+  margin: 50px auto 0 auto;
+  overflow: hidden;
+  background-color: #333;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+/* style of header component */
+.infor-rapper{
+  width: 300px;
+  padding-block: 30px;
+  margin: 30px auto -30px auto;
+  border-bottom-left-radius: 10px;
+  align-items: center;
+  line-height:1.4px;
+}
+.infor-content{
+  width: 100%;
+  margin: 0 auto;
+}
+.infor-content .avater{
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.infor-text{
+  text-align: center;
+  padding-block: 15px;
+  background-color: #000;
+  color: #fff;
+ 
+
+}
+.infor-text h4{
+  color: rgb(116, 116, 22);
+}
+/* style of Button component */
+.buttons{
+  display: flex;
+  justify-content: space-around;
+  background-color: #000;
+  width: 300px;
+  padding: 20px;
+  margin: 0 auto;
+  
+}
+.buttons button{
+  border: none;
+  text-align: center;
+  padding: 5px 10px;
+}
+.linkedin{
+  background-color: blue;
+  color: #fff;
+}
+/* About style component and  Interest style component  and Socials*/ 
+.About,.Interest,.Socials{
+  background-color: #000;
+  width: 300px;
+  padding: 20px;
+  margin: 0 auto;
+  color: #fff;
+  text-align: justify;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.Socials{
+  display: flex;
+  justify-content:space-between;
+}
+.Socials .icon:hover{
+  color: yellow;
 }
